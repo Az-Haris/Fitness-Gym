@@ -1,7 +1,84 @@
-
+@font-face {
+    font-family: miama;
+    src: url("./Assets/miama/Miama.otf");
+}
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
 
 *{
-    padding: 0;
     margin: 0;
+    /* font-family: miama, sans-serif; */
 }
+h1{
+    font-size: 60px;
+}
+h2{
+    font-size: 48px;
+}
+h3{
+    font-size: 36px;
+}
+h4{
+    font-size: 28px;
+}
+h5{
+    font-size: 18px;
+}
+h1, h2, h3, h4, h5{
+    color: #fff;
+}
+p{
+    color: #ffffff88;
+}
+.btn-primary{
+    padding: 16px 28px;
+    background-color: #E6533C;
+    border-radius: 50%;
+    color: #fff;
+}
+.btn-outlined{
+    padding: 16px 28px;
+    background-color: transparent;
+    border-radius: 50%;
+    color: #fff;
+    border-color: #fff;
+}
+body{
+    background-color: #000;
+    font-family: "Inter", sans-serif;
+}
+
+
+
+
+
+                            /* Header Section */
+header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 0;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 30px;
+    padding: 12px 4px;
+    border-radius: 50px;
+    list-style-type: none;
+    border: 1px solid #ffffff88;
+}
+nav ul li a{
+    text-decoration: none;
+    font-size: 18px;
+    padding: 8px 16px;
+    color: #ffffff;
+}
+nav ul li:nth-child(1) a{
+    background-color: #E6533C;
+    border-radius: 50px;
+}
+
+/* Banner CSS */
+.
