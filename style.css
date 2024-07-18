@@ -7,7 +7,6 @@
 
 *{
     margin: 0;
-    /* font-family: miama, sans-serif; */
 }
 h1{
     font-size: 60px;
@@ -29,19 +28,23 @@ h1, h2, h3, h4, h5{
 }
 p{
     color: #ffffff88;
+    font-weight: 300;
 }
 .btn-primary{
-    padding: 16px 28px;
+    padding: 16px 48px;
     background-color: #E6533C;
-    border-radius: 50%;
+    border-radius: 50px;
     color: #fff;
+    border-color: #E6533C;
+    font-size: 18px;
 }
 .btn-outlined{
-    padding: 16px 28px;
+    padding: 16px 48px;
     background-color: transparent;
-    border-radius: 50%;
+    border-radius: 50px;
     color: #fff;
     border-color: #fff;
+    font-size: 18px;
 }
 body{
     background-color: #000;
@@ -53,7 +56,24 @@ body{
 
 
                             /* Header Section */
-header nav{
+header{
+    background-image: linear-gradient(to bottom, #777777, #11111100);
+}
+.container{
+    max-width: 90%;
+    margin: auto;
+}
+#logo{
+    color: #E6533C;
+    cursor: pointer;
+    user-select: none;
+}
+#hamburger{
+    color: #fff;
+    font-size: 24px;
+    display: none;
+}
+.container nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -67,7 +87,7 @@ nav ul{
     padding: 12px 4px;
     border-radius: 50px;
     list-style-type: none;
-    border: 1px solid #ffffff88;
+    border: 1px solid #ffffff3a;
 }
 nav ul li a{
     text-decoration: none;
@@ -81,4 +101,34 @@ nav ul li:nth-child(1) a{
 }
 
 /* Banner CSS */
-.
+#special-text{
+    font-family: miama, sans-serif;
+    font-weight: 400;
+    font-size: 120px;
+    line-height: 0.5;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+                                /* Responsive Design */
+
+@media screen and (max-width: 576px) {
+    .container nav ul{
+        display: none;
+    }
+    #hamburger{
+        display: inline;
+    }
+    .container nav{
+        padding: 20px 0;
+    }
+}
