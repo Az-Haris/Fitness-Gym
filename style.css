@@ -9,19 +9,19 @@
     margin: 0;
 }
 h1{
-    font-size: 60px;
+    font-size: 5rem;
 }
 h2{
-    font-size: 48px;
+    font-size: 3rem;
 }
 h3{
-    font-size: 36px;
+    font-size: 2.2rem;
 }
 h4{
-    font-size: 28px;
+    font-size: 1.8rem;
 }
 h5{
-    font-size: 18px;
+    font-size: 1.1rem;
 }
 h1, h2, h3, h4, h5{
     color: #fff;
@@ -36,7 +36,8 @@ p{
     border-radius: 50px;
     color: #fff;
     border-color: #E6533C;
-    font-size: 18px;
+    font-size: 1.1rem;
+    cursor: pointer;
 }
 .btn-outlined{
     padding: 16px 48px;
@@ -44,7 +45,8 @@ p{
     border-radius: 50px;
     color: #fff;
     border-color: #fff;
-    font-size: 18px;
+    font-size: 1.1rem;
+    cursor: pointer;
 }
 body{
     background-color: #000;
@@ -57,7 +59,8 @@ body{
 
                             /* Header Section */
 header{
-    background-image: linear-gradient(to bottom, #777777, #11111100);
+    background-image: radial-gradient( #77777736 10%, #000000 70%);
+    margin-bottom: 100px;
 }
 .container{
     max-width: 90%;
@@ -70,7 +73,7 @@ header{
 }
 #hamburger{
     color: #fff;
-    font-size: 24px;
+    font-size: 1.5rem;
     display: none;
 }
 .container nav{
@@ -83,7 +86,7 @@ nav ul{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    gap: 30px;
+    gap: 2rem;
     padding: 12px 4px;
     border-radius: 50px;
     list-style-type: none;
@@ -91,7 +94,7 @@ nav ul{
 }
 nav ul li a{
     text-decoration: none;
-    font-size: 18px;
+    font-size: 1.1rem;
     padding: 8px 16px;
     color: #ffffff;
 }
@@ -104,10 +107,52 @@ nav ul li:nth-child(1) a{
 #special-text{
     font-family: miama, sans-serif;
     font-weight: 400;
-    font-size: 120px;
+    font-size: 10rem;
     line-height: 0.5;
 }
-
+.banner{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.banner-content p{
+    margin: 30px 0;
+    max-width: 600px;
+}
+.banner-action{
+    display: flex;
+    gap: 20px;
+}
+.banner-image{
+    position: relative;
+}
+.workout-video, .video-tutorial{
+    position: absolute;
+    padding: 18px 28px;
+    border-radius: 16px;
+    background-color: #ffffff0e;
+    backdrop-filter: blur(10px);
+}
+.video-icon{
+    width: 40px;
+    height: 40px;
+    background-color: red;
+    border-radius: 50%;
+}
+.video-tutorial{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    bottom: 60px;
+    left: -90px;
+}
+.video-tutorial h2{
+    font-size: 28px;
+}
+.workout-video{
+    right: -70px;
+    top: 150px;
+}
 
 
 
@@ -122,13 +167,63 @@ nav ul li:nth-child(1) a{
                                 /* Responsive Design */
 
 @media screen and (max-width: 576px) {
+    h1{
+        font-size: 3rem;
+    }
+    h2{
+        font-size: 2.6rem;
+    }
+    h3{
+        font-size: 2.2rem;
+    }
+    h4{
+        font-size: 1.8rem;
+    }
+    h5{
+        font-size: 1.1rem;
+    }
+    .btn-primary{
+        font-size: 1rem;
+        padding: 16px 28px;
+    }
+    .btn-outlined{
+        font-size: 1rem;
+        padding: 16px 28px;
+    }
     .container nav ul{
         display: none;
     }
     #hamburger{
         display: inline;
     }
-    .container nav{
-        padding: 20px 0;
+    .banner{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 60px;
+    }
+    #special-text{
+        font-size: 6rem;
+    }
+    .banner-image{
+        display: flex;
+        justify-content: center;
+    }
+    .banner-image img{
+        width: 60%;
+    }
+    .workout-video, .video-tutorial{
+        padding: 12px 18px;
+    }
+    .video-tutorial{
+        bottom: 40px;
+        left: -20px;
+    }
+    .workout-video{
+        right: -20px;
+        top: 100px;
+    }
+    .workout-video h2{
+        font-size: 36px;
     }
 }
