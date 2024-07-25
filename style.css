@@ -282,6 +282,55 @@ nav ul li:nth-child(1) a{
 }
 
 
+                    /* BMI Calculator Section */
+.bmi-title{
+    text-align: center;
+    margin-bottom: 60px;
+}
+.bmi-title p{
+    margin: 20px auto;
+    max-width: 600px;
+}
+.bmi-full-width{
+    background-color: #333333a4;
+    padding: 100px 0;
+}
+.bmi-calculator{
+    display: flex;
+    justify-content: space-between;
+
+}
+.bmi-chart table{
+    color: #969696;
+    font-size: 24px;
+    border-collapse: collapse;
+    margin-top: 80px;
+}
+table, th, td{
+    border: 1px solid #333333;
+    padding: 12px 30px;
+}
+.bmi-chart table th{
+    color: white;
+    text-align: left;
+}
+.calculator p{
+    margin: 30px 0;
+    max-width: 800px;
+}
+.height{grid-area: height;}
+.weight{grid-area: myWeight;}
+.age{grid-area: age;}
+.sex{grid-area: sex;}
+.activity{grid-area: activity;}
+.btn{grid-area: buttton;}
+.calculator form{
+    display: grid;
+    grid-template-areas: 
+    'height myWeight'
+    'age sex'
+    'activity activity';
+}
 
 
 
@@ -368,5 +417,20 @@ nav ul li:nth-child(1) a{
     }
     .extra-mile button{
         width: 100%;
+    }
+    .exercise3, .exercise6{
+        display: none;
+    }
+    .exercise{
+        height: 200px;
+    }
+    .exercise-row1{
+        grid-template-columns: 1.1fr 0.9fr;
+    }
+    .exercise-row2{
+        grid-template-columns: 0.9fr 1.1fr;
+    }
+    .exercise2{
+        background-position: center top;
     }
 }
