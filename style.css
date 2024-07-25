@@ -7,6 +7,7 @@
 
 *{
     margin: 0;
+    box-sizing: border-box;
 }
 h1{
     font-size: 5rem;
@@ -155,6 +156,133 @@ nav ul li:nth-child(1) a{
 }
 
 
+                            /* Change Habit Section */
+.change-habit{
+    text-align: center;
+    margin-bottom: 100px;
+}
+.change-habit > p{
+    margin: 20px auto 50px;
+    max-width: 600px;
+}
+.process{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 80px;
+}
+.process-card h5{
+    margin: 20px auto 10px;
+}
+.process-card img{
+    border-radius: 50%;
+    width: 100%;
+    border: 6px solid #333333;
+}
+
+
+
+                        /* Run Extra Mile Section */
+
+.extra-mile{
+    padding: 50px;
+    border-radius: 30px;
+    background-color: #333333a4;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 100px;
+    margin-bottom: 100px;
+}
+.extra-mile-content p{
+    margin: 30px 0;
+}
+.extra-mile-img img{
+    width: 100%;
+    border-radius: 30px;
+}
+
+
+                        /* Training Section */
+.training{
+    margin-bottom: 100px;
+}
+.training p {
+    margin: 20px 0 50px;
+    max-width: 600px;
+}
+.exercise{
+    height: 300px;
+    position: relative;
+}
+.exercise p{
+    position: absolute;
+    font-weight: 600;
+}
+.exercise-row1{
+    display: grid;
+    grid-template-columns: 0.6fr 1.6fr 0.8fr;
+}
+.exercise1{
+    background: linear-gradient(to bottom, rgba(53, 235, 159, 0.473), rgba(53, 235, 159, 0.473)), url("./Assets/exercise1.jpg");
+    background-size: cover;
+}
+.exercise1 p{
+    bottom: 0;
+    left: 20px;
+    color: #000000;
+}
+.exercise2{
+    background: linear-gradient(to bottom, rgba(224, 46, 46, 0.473), rgba(224, 46, 46, 0.473)), url("./Assets/exercise2.png");
+    background-size: cover;
+    background-position: center;
+}
+.exercise2 p{
+    top: 10px;
+    left: 20px;
+}
+.exercise3{
+    background: linear-gradient(to bottom, rgba(56, 56, 56, 0.473), rgba(56, 56, 56, 0.473)), url("./Assets/exercise3.png");
+    background-size: cover;
+    background-position: top;
+}
+.exercise3 p{
+    bottom: 0px;
+    left: 20px;
+}
+.exercise-row2{
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr 1fr;
+}
+.exercise4{
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.418), rgba(0, 0, 0, 0.418)), url("./Assets/exercise4.png");
+    background-size: cover;
+}
+.exercise4 p{
+    top: 20px;
+    right: 70px;
+}
+.exercise5{
+    background: linear-gradient(to bottom, rgba(90, 255, 57, 0.267), rgba(90, 255, 57, 0.267)), url("./Assets/exercise5.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.exercise5 p{
+    bottom: -30px;
+    left: 20px;
+}
+.exercise6{
+    background: linear-gradient(to bottom, rgba(103, 100, 255, 0.355), rgba(103, 100, 255, 0.355)), url("./Assets/exercise6.jpg");
+    background-size: cover;
+    background-position: top;
+}
+.exercise6 p{
+    right: 40px;
+    top: 40px;
+}
+
+
+
 
 
 
@@ -196,6 +324,9 @@ nav ul li:nth-child(1) a{
     #hamburger{
         display: inline;
     }
+    header{
+        margin-bottom: 0;
+    }
     .banner{
         flex-direction: column;
         justify-content: center;
@@ -210,20 +341,32 @@ nav ul li:nth-child(1) a{
         justify-content: center;
     }
     .banner-image img{
-        width: 60%;
+        width: 100%;
     }
     .workout-video, .video-tutorial{
         padding: 12px 18px;
     }
     .video-tutorial{
-        bottom: 40px;
+        bottom: 70px;
         left: -20px;
     }
     .workout-video{
         right: -20px;
-        top: 100px;
+        top: 150px;
     }
     .workout-video h2{
         font-size: 36px;
+    }
+    .process{
+        flex-direction: column;
+    }
+    .extra-mile{
+        flex-direction: column;
+        justify-content: center;
+        padding: 20px;
+        gap: 30px;
+    }
+    .extra-mile button{
+        width: 100%;
     }
 }
