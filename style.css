@@ -647,4 +647,14 @@ hr{
     .footer h1{
         font-size: 5rem;
     }
+    .contact-us{
+        flex-direction: column;
+        gap: 60px;
+    }
+    .contact-form input{
+        width: 100%;
+    }
+    .contact-form textarea{
+        width: 100%;
+    }
 }
