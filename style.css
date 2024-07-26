@@ -294,6 +294,7 @@ nav ul li:nth-child(1) a{
 .bmi-full-width{
     background-color: #333333a4;
     padding: 100px 0;
+    margin-bottom: 100px;
 }
 .bmi-calculator{
     display: flex;
@@ -318,18 +319,28 @@ table, th, td{
     margin: 30px 0;
     max-width: 800px;
 }
-.height{grid-area: height;}
-.weight{grid-area: myWeight;}
-.age{grid-area: age;}
-.sex{grid-area: sex;}
-.activity{grid-area: activity;}
-.btn{grid-area: buttton;}
-.calculator form{
-    display: grid;
-    grid-template-areas: 
-    'height myWeight'
-    'age sex'
-    'activity activity';
+
+.height-weight{
+    display: flex;
+    gap: 20px;
+}
+.age-sex{
+    display: flex;
+    gap: 20px;
+    margin: 20px 0;
+}
+.height, .weight, .age, .sex, .activity{
+    padding: 20px 24px;
+    font-size: 20px;
+    border-radius: 14px;
+    background-color: #333333;
+    color: #d1d1d1;
+    width: 100%;
+}
+.calculator input[type="submit"]{
+    margin: 30px 0;
+    font-size: 24px;
+    padding: 20px 90px;
 }
 
 
@@ -432,5 +443,25 @@ table, th, td{
     }
     .exercise2{
         background-position: center top;
+    }
+    .bmi-calculator{
+        flex-direction: column;
+        gap: 60px;
+    }
+    .height, .weight, .age, .sex, .activity{
+        padding: 16px 18px;
+        font-size: 18px;
+    }
+    .calculator input[type="submit"]{
+        margin: 30px 0 0;
+        font-size: 20px;
+        padding: 16px 80px;
+    }
+    .calculator p{
+        margin: 20px 0;
+    }
+    .bmi-chart table{
+        margin-top: 30px;
+        font-size: 18px;
     }
 }

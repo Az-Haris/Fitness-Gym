@@ -174,18 +174,24 @@
                             income or access to a gym. </p>
                         
                         <form action="#">
-                            <input class="height" type="text" placeholder="Height/cm">
-                            <input class="weight" type="text" placeholder="Weight/kg">
-                            <input class="age" type="text" placeholder="Age">
-                            <select class="sex" name="sex" id="">
-                                <option value="Sex">Sex</option>
-                                <option value="Male">Male</option>
-                                <option value="Female">Female</option>
-                            </select>
-                            <select class="activity" name="activity" id="">
-                                <option value="Select Activity">Select an Activity Factor</option>
-                                <option value="Game">Game</option>
-                            </select>
+                            <div class="height-weight">
+                                <input class="height" type="text" placeholder="Height/cm">
+                                <input class="weight" type="text" placeholder="Weight/kg">
+                            </div>
+                            <div class="age-sex">
+                                <input class="age" type="text" placeholder="Age">
+                                <select class="sex" name="sex" id="">
+                                    <option value="Sex">Sex</option>
+                                    <option value="Male">Male</option>
+                                    <option value="Female">Female</option>
+                                </select>
+                            </div>
+                            <div class="activity-div">
+                                <select class="activity" name="activity" id="">
+                                    <option value="Select Activity">Select an Activity Factor</option>
+                                    <option value="Game">Game</option>
+                                </select>
+                            </div>
                             <input class="btn-primary" type="submit" value="Calculate">
                         </form>
                     </div>
